@@ -67,6 +67,7 @@ body {
 
 .title{
     margin: 6px 0 6px 0;
+    color: #3399ff;
 }
 
 .controls {
@@ -98,4 +99,28 @@ body {
 
 .control-btn_stop:hover {
     background: #C42B1C;
+}
+
+span{
+    color:#00ff00;
+}
+
+.terminal::-webkit-scrollbar {
+    width: 12px;              
+    background-color: #0c0c0c; 
+}
+
+.terminal::-webkit-scrollbar-thumb {
+    background-color: #555;   
+    border-radius: 2px;
+    border: 2px solid #0c0c0c;
+}
+
+.terminal::-webkit-scrollbar-thumb:hover {
+    background-color: #777;   
+}
+
+.terminal {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #0c0c0c;
 }
