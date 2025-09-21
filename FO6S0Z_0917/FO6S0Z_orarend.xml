@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orarend>
+    <hetfo>
+        <ora id="1" tipus="eloadas">
+            <targy>Programozás alapjai</targy>
+            <idopont>
+                <tol>10:00</tol>
+                <ig>12:00</ig>
+            </idopont>
+            <helyszin>E5</helyszin>
+            <oktato>Dr. Agárdi Anita</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+        <ora id="2" tipus="gyakorlat">
+            <targy>Számítógép architektúrák</targy>
+            <idopont>
+                <tol>12:00</tol>
+                <ig>14:00</ig>
+            </idopont>
+            <helyszin>L102</helyszin>
+            <oktato>Huszák Péter</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+        <ora id="3" tipus="gyakorlat">
+            <targy>Web technológiák 1</targy>
+            <idopont>
+                <tol>12:00</tol>
+                <ig>14:00</ig>
+            </idopont>
+            <helyszin>L101</helyszin>
+            <oktato>Dr. Agárdi Anita</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+    </hetfo>
+    <kedd>
+        <ora id="4" tipus="eloadas">
+            <targy>Adatbázisrendszerek I.</targy>
+            <idopont>
+                <tol>8:00</tol>
+                <ig>10:00</ig>
+            </idopont>
+            <helyszin>E1</helyszin>
+            <oktato>Dr. Kovács László József</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+        <ora id="5" tipus="eloadas">
+            <targy>Analizís</targy>
+            <idopont>
+                <tol>10:00</tol>
+                <ig>11:00</ig>
+            </idopont>
+            <helyszin>E3</helyszin>
+            <oktato>Lengyelné Dr. Szilágyi Szilvia</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+        <ora id="6" tipus="gyakorlat">
+            <targy>Adatbázisrendszerek I. gyakorlat</targy>
+            <idopont>
+                <tol>11:00</tol>
+                <ig>13:00</ig>
+            </idopont>
+            <helyszin>IN202</helyszin>
+            <oktato>Szűcs Miklós</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+    </kedd>
+    <szerda>
+        <ora id="7" tipus="eloadas">
+            <targy>Szoftvertechnológia</targy>
+            <idopont>
+                <tol>8:00</tol>
+                <ig>10:00</ig>
+            </idopont>
+            <helyszin>E3</helyszin>
+            <oktato>Dr. Mileff Péter</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+        <ora id="8" tipus="eloadas">
+            <targy>Szoftvertechnológia</targy>
+            <idopont>
+                <tol>08:00</tol>
+                <ig>10:00</ig>
+            </idopont>
+            <helyszin>E3</helyszin>
+            <oktato>Dr. Mileff Péter</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+        <ora id="9" tipus="gyakorlat">
+            <targy>Szoftvertechnológia</targy>
+            <idopont>
+                <tol>10:00</tol>
+                <ig>11:00</ig>
+            </idopont>
+            <helyszin>E3</helyszin>
+            <oktato>Dr. Mileff Péter</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+        <ora id="11" tipus="eloadas">
+            <targy>Lineárisalgebra</targy>
+            <idopont>
+                <tol>11:00</tol>
+                <ig>12:00</ig>
+            </idopont>
+            <helyszin>E33/32</helyszin>
+            <oktato>x</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+        <ora id="12" tipus="gyakorlat">
+            <targy>Web technológiák 1 gyakorlat</targy>
+            <idopont>
+                <tol>14:00</tol>
+                <ig>16:00</ig>
+            </idopont>
+            <helyszin>L102</helyszin>
+            <oktato>Dr. Bednarik László</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+        <ora id="13" tipus="gyakorlat">
+            <targy>Adatbázisrendszerek 1.</targy>
+            <idopont>
+                <tol>16:00</tol>
+                <ig>18:00</ig>
+            </idopont>
+            <helyszin>In10x</helyszin>
+            <oktato>Mészáros Gergő</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+    </szerda>
+    <csutortok>
+        <ora id="14" tipus="gyakorlat">
+            <targy>Analizís.</targy>
+            <idopont>
+                <tol>08:00</tol>
+                <ig>10:00</ig>
+            </idopont>
+            <helyszin>E33</helyszin>
+            <oktato>Lengyelné Dr. Szilágyi Szilvia</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+        <ora id="15" tipus="gyakorlat">
+            <targy>Lineárisalgebra</targy>
+            <idopont>
+                <tol>10:00</tol>
+                <ig>12:00</ig>
+            </idopont>
+            <helyszin>E30</helyszin>
+            <oktato>x</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>
+        <ora id="16" tipus="eloadas">
+            <targy>Számítógép architektúrák</targy>
+            <idopont>
+                <tol>12:00</tol>
+                <ig>14:00</ig>
+            </idopont>
+            <helyszin>E3</helyszin>
+            <oktato>Dr. Kovács Szilveszter Dezső</oktato>
+            <szak>Üzemmérnök-Informatikus</szak>
+        </ora>         
+    </csutortok>
+</orarend> 
