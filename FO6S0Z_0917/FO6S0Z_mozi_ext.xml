@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mozi>
     <film id="txn_nxm_2jb" mufaj="horror">
-        <rendezo id="nzk_4xm_2jb" nev="alex" />
+        <rendezok>
+            <rendezo id="r1" nev="Kovacs Bela"/>
+            <rendezo id="r2" nev="Nagy Anna"/>
+        </rendezok>       
         <szinesz id="u5g_4xm_2jb" nev="Madison_Ivy" />
         <szinesz id="a">
             <gyermekszinesz />
             <musicalszinesz />
             <szinkronszinesz />
         </szinesz>
-        <iro id="trv_4xm_2jb" />
+        <irok>
+            <iro id="i1" nev="Toth Laszlo"/>
+            <iro id="i2" nev="Szabo Maria"/>
+        </irok>
     </film>
 </mozi>
