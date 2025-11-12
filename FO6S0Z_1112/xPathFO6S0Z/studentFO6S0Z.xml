@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Class>
+	<Student id="01">
+		<Knev>Béla</Knev>
+		<Vnev>Vas</Vnev>
+		<Bnev>Vasas</Bnev>
+		<Kor>42</Kor>
+	</Student>
+	<Student id="02">
+		<Knev>Zsolt</Knev>
+		<Vnev>Iváncsai</Vnev>
+		<Bnev>Zsozso</Bnev>
+		<Kor>32</Kor>
+	</Student>
+	<Student id="03">
+		<Knev>István</Knev>
+		<Vnev>Kabát</Vnev>
+		<Bnev>Pisti</Bnev>
+		<Kor>23</Kor>
+	</Student>
+</Class>
