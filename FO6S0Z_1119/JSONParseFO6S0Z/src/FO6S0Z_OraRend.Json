@@ -1,0 +1,113 @@
+{
+    "FO6S0Z_orarend": {
+      "ora": [
+        {
+          "targy": "Programozás alapjai",
+          "idopont": { "nap": "hetfo", "tol": "10:00", "ig": "12:00" },
+          "helyszin": "E5",
+          "oktato": "Dr. Agárdi Anita",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+          "targy": "Számítógép architektúrák",
+          "idopont": { "nap": "hetfo", "tol": "12:00", "ig": "14:00" },
+          "helyszin": "L102",
+          "oktato": "Huszák Péter",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+
+          "targy": "Web technológiák 1",
+          "idopont": { "nap": "hetfo", "tol": "12:00", "ig": "14:00" },
+          "helyszin": "L101",
+          "oktato": "Dr. Agárdi Anita",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+          "targy": "Adatbázisrendszerek I.",
+          "idopont": { "nap": "kedd", "tol": "8:00", "ig": "10:00" },
+          "helyszin": "E1",
+          "oktato": "Dr. Kovács László József",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+          "targy": "Analizís",
+          "idopont": { "nap": "kedd", "tol": "10:00", "ig": "11:00" },
+          "helyszin": "E3",
+          "oktato": "Lengyelné Dr. Szilágyi Szilvia",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+          "targy": "Adatbázisrendszerek I. gyakorlat",
+          "idopont": { "nap": "kedd", "tol": "11:00", "ig": "13:00" },
+          "helyszin": "IN202",
+          "oktato": "Szűcs Miklós",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+          "targy": "Szoftvertechnológia",
+          "idopont": { "nap": "szerda", "tol": "8:00", "ig": "10:00" },
+          "helyszin": "E3",
+          "oktato": "Dr. Mileff Péter",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+          "targy": "Szoftvertechnológia",
+          "idopont": { "nap": "szerda", "tol": "08:00", "ig": "10:00" },
+          "helyszin": "E3",
+          "oktato": "Dr. Mileff Péter",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+          "targy": "Szoftvertechnológia",
+          "idopont": { "nap": "szerda", "tol": "10:00", "ig": "11:00" },
+          "helyszin": "E3",
+          "oktato": "Dr. Mileff Péter",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+          "targy": "Lineárisalgebra",
+          "idopont": { "nap": "szerda", "tol": "11:00", "ig": "12:00" },
+          "helyszin": "E33/32",
+          "oktato": "x",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+          "targy": "Web technológiák 1 gyakorlat",
+          "idopont": { "nap": "szerda", "tol": "14:00", "ig": "16:00" },
+          "helyszin": "L102",
+          "oktato": "Dr. Bednarik László",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+          "targy": "Adatbázisrendszerek 1.",
+          "idopont": { "nap": "szerda", "tol": "16:00", "ig": "18:00" },
+          "helyszin": "In10x",
+          "oktato": "Mészáros Gergő",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+          "targy": "Analizís.",
+          "idopont": { "nap": "csutortok", "tol": "08:00", "ig": "10:00" },
+          "helyszin": "E33",
+          "oktato": "Lengyelné Dr. Szilágyi Szilvia",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+          "targy": "Lineárisalgebra",
+          "idopont": { "nap": "csutortok", "tol": "10:00", "ig": "12:00" },
+          "helyszin": "E30",
+          "oktato": "x",
+          "szak": "Üzemmérnök-Informatikus"
+        },
+        {
+          "targy": "Számítógép architektúrák",
+          "idopont": { "nap": "csutortok", "tol": "12:00", "ig": "14:00" },
+          "helyszin": "E3",
+          "oktato": "Dr. Kovács Szilveszter Dezső",
+          "szak": "Üzemmérnök-Informatikus"
+        }
+      ]
+    }
+  }
+  
