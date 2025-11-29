@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Név" type="xs:string"/>
+  <xs:element name="Nemzetiség" type="xs:string"/>
+  <xs:element name="SzületésiÉv" type="xs:gYear"/>
+  
+  <xs:element name="Email">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^\.]+\..+"/>
+        </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="Szerző">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Név"/>
+        <xs:element ref="Nemzetiség"/>
+        <xs:element ref="SzületésiÉv"/>
+        <xs:element ref="Email"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="SZ_ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Cím" type="xs:string"/>
+  <xs:element name="Leírás" type="xs:string"/>
+  <xs:element name="Műfaj" type="xs:string"/>
+  
+  <xs:element name="Könyv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Cím"/>
+        <xs:element ref="Leírás"/>
+        <xs:element ref="Műfaj" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="K_ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="K_ID" type="xs:string"/>
+  <xs:element name="SZ_ID" type="xs:string"/>
+  
+  <xs:element name="Kapcsolat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="K_ID"/>
+        <xs:element ref="SZ_ID"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="KiadásiÉv" type="xs:gYear"/>
+  <xs:element name="Állapot" type="xs:string"/>
+  
+  <xs:element name="Példány">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="K_ID"/> <xs:element ref="KiadásiÉv"/>
+        <xs:element ref="Állapot"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="P_ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Város" type="xs:string"/>
+  <xs:element name="Utca" type="xs:string"/>
+  <xs:element name="Házszám" type="xs:string"/>
+  <xs:element name="Telefonszám" type="xs:string"/>
+  <xs:element name="BérletVége" type="xs:date"/>
+  
+  <xs:element name="Lakcím">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Város"/>
+        <xs:element ref="Utca"/>
+        <xs:element ref="Házszám"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Kölcsönző">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Név"/>
+        <xs:element ref="Email"/>
+        <xs:element ref="Telefonszám"/>
+        <xs:element ref="BérletVége"/>
+        <xs:element ref="Lakcím"/> </xs:sequence>
+      <xs:attribute type="xs:string" name="KÖL_ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="KÖL_ID" type="xs:string"/>
+  <xs:element name="P_ID" type="xs:string"/>
+  <xs:element name="Kezdete" type="xs:date"/>
+  <xs:element name="Vége" type="xs:date"/>
+  
+  <xs:element name="Kölcsönzés">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="KÖL_ID"/>
+        <xs:element ref="P_ID"/>
+        <xs:element ref="Kezdete"/>
+        <xs:element ref="Vége"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="KO_ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Szerzők">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Szerző" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Könyvek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Könyv" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Írók_Kapcsolatok">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Kapcsolat" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Példányok">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Példány" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Kölcsönzők">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Kölcsönző" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Kölcsönzések">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Kölcsönzés" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="FO6S0Z_Könyvtár">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Szerzők"/>
+        <xs:element ref="Könyvek"/>
+        <xs:element ref="Írók_Kapcsolatok"/>
+        <xs:element ref="Példányok"/>
+        <xs:element ref="Kölcsönzők"/>
+        <xs:element ref="Kölcsönzések"/>
+      </xs:sequence>
+    </xs:complexType>
+
+    <xs:key name="KonyvKey">
+        <xs:selector xpath="Könyvek/Könyv"/>
+        <xs:field xpath="@K_ID"/>
+    </xs:key>
+
+    <xs:key name="SzerzoKey">
+        <xs:selector xpath="Szerzők/Szerző"/>
+        <xs:field xpath="@SZ_ID"/>
+    </xs:key>
+
+    <xs:key name="PeldanyKey">
+        <xs:selector xpath="Példányok/Példány"/>
+        <xs:field xpath="@P_ID"/>
+    </xs:key>
+
+    <xs:key name="KolcsonzoKey">
+        <xs:selector xpath="Kölcsönzők/Kölcsönző"/>
+        <xs:field xpath="@KÖL_ID"/>
+    </xs:key>
+
+    <xs:keyref name="PeldanyToKonyv" refer="KonyvKey">
+        <xs:selector xpath="Példányok/Példány"/>
+        <xs:field xpath="K_ID"/>
+    </xs:keyref>
+
+    <xs:keyref name="IrokToKonyv" refer="KonyvKey">
+        <xs:selector xpath="Írók_Kapcsolatok/Kapcsolat"/>
+        <xs:field xpath="K_ID"/>
+    </xs:keyref>
+    <xs:keyref name="IrokToSzerzo" refer="SzerzoKey">
+        <xs:selector xpath="Írók_Kapcsolatok/Kapcsolat"/>
+        <xs:field xpath="SZ_ID"/>
+    </xs:keyref>
+
+    <xs:keyref name="KolcsonzesToUser" refer="KolcsonzoKey">
+        <xs:selector xpath="Kölcsönzések/Kölcsönzés"/>
+        <xs:field xpath="KÖL_ID"/>
+    </xs:keyref>
+    <xs:keyref name="KolcsonzesToPeldany" refer="PeldanyKey">
+        <xs:selector xpath="Kölcsönzések/Kölcsönzés"/>
+        <xs:field xpath="P_ID"/>
+    </xs:keyref>
+
+  </xs:element>
+</xs:schema>

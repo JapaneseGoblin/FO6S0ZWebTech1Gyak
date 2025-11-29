@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FO6S0Z_Könyvtár>
+
+    <Szerzők>
+        <Szerző SZ_ID="SZ01">
+            <Név>Gárdonyi Géza</Név>
+            <Nemzetiség>Magyar</Nemzetiség>
+            <SzületésiÉv>1863</SzületésiÉv>
+            <Email>gardonyi.emlek@konyvtar.hu</Email>
+        </Szerző>
+        <Szerző SZ_ID="SZ02">
+            <Név>J.K. Rowling</Név>
+            <Nemzetiség>Angol</Nemzetiség>
+            <SzületésiÉv>1965</SzületésiÉv>
+            <Email>jkrowling@agent.uk</Email>
+        </Szerző>
+    </Szerzők>
+
+    <Könyvek>
+        <Könyv K_ID="K01">
+            <Cím>Egri csillagok</Cím>
+            <Leírás>Történelmi regény az 1552-es ostromról.</Leírás>
+            <Műfaj>Történelmi</Műfaj>
+            <Műfaj>Regény</Műfaj> </Könyv>
+        <Könyv K_ID="K02">
+            <Cím>Harry Potter és a Bölcsek Köve</Cím>
+            <Leírás>Egy varázslótanonc első éve a Roxfortban.</Leírás>
+            <Műfaj>Fantasy</Műfaj>
+            <Műfaj>Ifjúsági</Műfaj>
+        </Könyv>
+    </Könyvek>
+
+    <Írók_Kapcsolatok>
+        <Kapcsolat>
+            <K_ID>K01</K_ID>
+            <SZ_ID>SZ01</SZ_ID>
+        </Kapcsolat>
+        <Kapcsolat>
+            <K_ID>K02</K_ID>
+            <SZ_ID>SZ02</SZ_ID>
+        </Kapcsolat>
+    </Írók_Kapcsolatok>
+
+    <Példányok>
+        <Példány P_ID="P001">
+            <K_ID>K01</K_ID> <KiadásiÉv>2005</KiadásiÉv>
+            <Állapot>Használt, jó</Állapot>
+        </Példány>
+        <Példány P_ID="P002">
+            <K_ID>K01</K_ID> <KiadásiÉv>2020</KiadásiÉv>
+            <Állapot>Új</Állapot>
+        </Példány>
+        <Példány P_ID="P003">
+            <K_ID>K02</K_ID> <KiadásiÉv>2018</KiadásiÉv>
+            <Állapot>Sérült borító</Állapot>
+        </Példány>
+    </Példányok>
+
+    <Kölcsönzők>
+        <Kölcsönző KÖL_ID="U01">
+            <Név>Kovács János</Név>
+            <Email>kovacs.janos@gmail.com</Email>
+            <Telefonszám>+36301234567</Telefonszám>
+            <BérletVége>2024-12-31</BérletVége>
+            <Lakcím>
+                <Város>Budapest</Város>
+                <Utca>Kossuth Lajos utca</Utca>
+                <Házszám>12</Házszám>
+            </Lakcím>
+        </Kölcsönző>
+        <Kölcsönző KÖL_ID="U02">
+            <Név>Nagy Éva</Név>
+            <Email>nagy.eva@freemail.hu</Email>
+            <Telefonszám>+36209876543</Telefonszám>
+            <BérletVége>2025-06-15</BérletVége>
+            <Lakcím>
+                <Város>Debrecen</Város>
+                <Utca>Piac utca</Utca>
+                <Házszám>4</Házszám>
+            </Lakcím>
+        </Kölcsönző>
+    </Kölcsönzők>
+
+    <Kölcsönzések>
+        <Kölcsönzés KO_ID="TR01">
+            <KÖL_ID>U01</KÖL_ID> <P_ID>P001</P_ID>   <Kezdete>2023-11-01</Kezdete>
+            <Vége>2023-11-15</Vége>
+        </Kölcsönzés>
+        <Kölcsönzés KO_ID="TR02">
+            <KÖL_ID>U02</KÖL_ID> <P_ID>P003</P_ID>   <Kezdete>2023-11-20</Kezdete>
+            <Vége>2023-12-04</Vége>
+        </Kölcsönzés>
+    </Kölcsönzések>
+
+</FO6S0Z_Könyvtár>
