@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<FO6S0Z_Könyvtár>
+<FO6S0Z_Könyvtár xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
 
     <Szerzők>
         <Szerző SZ_ID="SZ01">
@@ -21,7 +21,8 @@
             <Cím>Egri csillagok</Cím>
             <Leírás>Történelmi regény az 1552-es ostromról.</Leírás>
             <Műfaj>Történelmi</Műfaj>
-            <Műfaj>Regény</Műfaj> </Könyv>
+            <Műfaj>Regény</Műfaj> 
+        </Könyv>
         <Könyv K_ID="K02">
             <Cím>Harry Potter és a Bölcsek Köve</Cím>
             <Leírás>Egy varázslótanonc első éve a Roxfortban.</Leírás>
@@ -43,15 +44,18 @@
 
     <Példányok>
         <Példány P_ID="P001">
-            <K_ID>K01</K_ID> <KiadásiÉv>2005</KiadásiÉv>
+            <K_ID>K01</K_ID> 
+            <KiadásiÉv>2005</KiadásiÉv>
             <Állapot>Használt, jó</Állapot>
         </Példány>
         <Példány P_ID="P002">
-            <K_ID>K01</K_ID> <KiadásiÉv>2020</KiadásiÉv>
+            <K_ID>K01</K_ID> 
+            <KiadásiÉv>2020</KiadásiÉv>
             <Állapot>Új</Állapot>
         </Példány>
         <Példány P_ID="P003">
-            <K_ID>K02</K_ID> <KiadásiÉv>2018</KiadásiÉv>
+            <K_ID>K02</K_ID> 
+            <KiadásiÉv>2018</KiadásiÉv>
             <Állapot>Sérült borító</Állapot>
         </Példány>
     </Példányok>
@@ -61,7 +65,6 @@
             <Név>Kovács János</Név>
             <Email>kovacs.janos@gmail.com</Email>
             <Telefonszám>+36301234567</Telefonszám>
-            <BérletVége>2024-12-31</BérletVége>
             <Lakcím>
                 <Város>Budapest</Város>
                 <Utca>Kossuth Lajos utca</Utca>
@@ -72,7 +75,6 @@
             <Név>Nagy Éva</Név>
             <Email>nagy.eva@freemail.hu</Email>
             <Telefonszám>+36209876543</Telefonszám>
-            <BérletVége>2025-06-15</BérletVége>
             <Lakcím>
                 <Város>Debrecen</Város>
                 <Utca>Piac utca</Utca>
@@ -81,13 +83,28 @@
         </Kölcsönző>
     </Kölcsönzők>
 
+    <Bérletek>
+        <Bérlet B_ID="B01">
+            <Vonalkód>LIB-2023-001</Vonalkód>
+            <Kiállítva>2023-01-01</Kiállítva>
+            <Vége>2024-12-31</Vége> <KÖL_ID>U01</KÖL_ID>   </Bérlet>
+        <Bérlet B_ID="B02">
+            <Vonalkód>LIB-2023-045</Vonalkód>
+            <Kiállítva>2023-06-15</Kiállítva>
+            <Vége>2025-06-15</Vége> <KÖL_ID>U02</KÖL_ID>   </Bérlet>
+    </Bérletek>
+
     <Kölcsönzések>
         <Kölcsönzés KO_ID="TR01">
-            <KÖL_ID>U01</KÖL_ID> <P_ID>P001</P_ID>   <Kezdete>2023-11-01</Kezdete>
+            <KÖL_ID>U01</KÖL_ID> 
+            <P_ID>P001</P_ID>   
+            <Kezdete>2023-11-01</Kezdete>
             <Vége>2023-11-15</Vége>
         </Kölcsönzés>
         <Kölcsönzés KO_ID="TR02">
-            <KÖL_ID>U02</KÖL_ID> <P_ID>P003</P_ID>   <Kezdete>2023-11-20</Kezdete>
+            <KÖL_ID>U02</KÖL_ID> 
+            <P_ID>P003</P_ID>   
+            <Kezdete>2023-11-20</Kezdete>
             <Vége>2023-12-04</Vége>
         </Kölcsönzés>
     </Kölcsönzések>

@@ -1,0 +1,30 @@
+[
+  {
+    "nev": "Zöld Ferenc",
+    "evfolyam": "1",
+    "szak": "PTI",
+    "email": "zold.ferenc@uni.hu",
+    "neptun": "KKKFFF"
+  },
+  {
+    "nev": "Piros Judit",
+    "evfolyam": "3",
+    "szak": "PTI",
+    "email": "piros.judit@uni.hu",
+    "neptun": "PPPJJJ"
+  },
+  {
+    "nev": "Kék Antal",
+    "evfolyam": "2",
+    "szak": "Mérnökinfó",
+    "email": "kek.antal@uni.hu",
+    "neptun": "AAA123"
+  },
+  {
+    "nev": "Fehér Anna",
+    "evfolyam": "1",
+    "szak": "PTI",
+    "email": "feher.anna@uni.hu",
+    "neptun": "WHI456"
+  }
+]

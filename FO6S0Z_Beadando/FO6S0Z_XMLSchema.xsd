@@ -58,7 +58,8 @@
   <xs:element name="Példány">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="K_ID"/> <xs:element ref="KiadásiÉv"/>
+        <xs:element ref="K_ID"/> 
+        <xs:element ref="KiadásiÉv"/>
         <xs:element ref="Állapot"/>
       </xs:sequence>
       <xs:attribute type="xs:string" name="P_ID" use="required"/>
@@ -69,7 +70,6 @@
   <xs:element name="Utca" type="xs:string"/>
   <xs:element name="Házszám" type="xs:string"/>
   <xs:element name="Telefonszám" type="xs:string"/>
-  <xs:element name="BérletVége" type="xs:date"/>
   
   <xs:element name="Lakcím">
     <xs:complexType>
@@ -87,13 +87,25 @@
         <xs:element ref="Név"/>
         <xs:element ref="Email"/>
         <xs:element ref="Telefonszám"/>
-        <xs:element ref="BérletVége"/>
-        <xs:element ref="Lakcím"/> </xs:sequence>
+        <xs:element ref="Lakcím"/> 
+      </xs:sequence>
       <xs:attribute type="xs:string" name="KÖL_ID" use="required"/>
     </xs:complexType>
   </xs:element>
 
-  <xs:element name="KÖL_ID" type="xs:string"/>
+  <xs:element name="Vonalkód" type="xs:string"/>
+  <xs:element name="Kiállítva" type="xs:date"/>
+  <xs:element name="KÖL_ID" type="xs:string"/> <xs:element name="Bérlet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Vonalkód"/>
+        <xs:element ref="Kiállítva"/>
+        <xs:element ref="Vége"/>
+        <xs:element ref="KÖL_ID"/> </xs:sequence>
+      <xs:attribute type="xs:string" name="B_ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
   <xs:element name="P_ID" type="xs:string"/>
   <xs:element name="Kezdete" type="xs:date"/>
   <xs:element name="Vége" type="xs:date"/>
@@ -149,6 +161,14 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+  <xs:element name="Bérletek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Bérlet" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   
   <xs:element name="Kölcsönzések">
     <xs:complexType>
@@ -166,7 +186,7 @@
         <xs:element ref="Írók_Kapcsolatok"/>
         <xs:element ref="Példányok"/>
         <xs:element ref="Kölcsönzők"/>
-        <xs:element ref="Kölcsönzések"/>
+        <xs:element ref="Bérletek"/> <xs:element ref="Kölcsönzések"/>
       </xs:sequence>
     </xs:complexType>
 
@@ -190,6 +210,16 @@
         <xs:field xpath="@KÖL_ID"/>
     </xs:key>
 
+    <xs:key name="BerletKey">
+        <xs:selector xpath="Bérletek/Bérlet"/>
+        <xs:field xpath="@B_ID"/>
+    </xs:key>
+
+    <xs:unique name="UniqueKolcsonzoInBerlet">
+        <xs:selector xpath="Bérletek/Bérlet"/>
+        <xs:field xpath="KÖL_ID"/>
+    </xs:unique>
+
     <xs:keyref name="PeldanyToKonyv" refer="KonyvKey">
         <xs:selector xpath="Példányok/Példány"/>
         <xs:field xpath="K_ID"/>
@@ -202,6 +232,11 @@
     <xs:keyref name="IrokToSzerzo" refer="SzerzoKey">
         <xs:selector xpath="Írók_Kapcsolatok/Kapcsolat"/>
         <xs:field xpath="SZ_ID"/>
+    </xs:keyref>
+
+    <xs:keyref name="BerletToKolcsonzo" refer="KolcsonzoKey">
+        <xs:selector xpath="Bérletek/Bérlet"/>
+        <xs:field xpath="KÖL_ID"/>
     </xs:keyref>
 
     <xs:keyref name="KolcsonzesToUser" refer="KolcsonzoKey">
